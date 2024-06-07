@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library of Congress Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/darkly/bootstrap.min.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <form id="search-form" class="p-3">
+    <div>
+        <input class="form-control mb-3" type="text" id="q" name="q" placeholder="search" />
+        <button class="btn btn-primary mb-3" type="submit">Submit</button>
+    </div>
+    </form>
+    <main>
+        <div class="row" id="results">
+            <div class="col-12">
+                <div  class="card p-3 m-3">
+                    <h2>Tile</h2>
+                    <p>Date: Something</p>
+                    <p>Subject: Something</p>
+                    <a class="btn btn-primary" href="#">Read More</a>
+                </div>
+            </div>
+                <div class="row" id="results">
+            <div class="col-12">
+                <div  class="card p-3 m-3">
+                    <h2>Tile</h2>
+                    <p>Date: Something</p>
+                    <p>Subject: Something</p>
+                    <a class="btn btn-primary" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div  class="card p-3 m-3">
+                    <h2>Tile</h2>
+                    <p>Date: Something</p>
+                    <p>Subject: Something</p>
+                    <a class="btn btn-primary" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
