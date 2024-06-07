@@ -17,7 +17,7 @@ fetch('https://www.loc.gov/film-and-videos/?q=dog&fo=json')
     searchForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const q = qInput.ariaValueText.trim();
+        const q = qInput.value.trim();
 
         fetch('https://www.loc.gov/search/?q=' + q + '&fo=json')
 .then(function (response) {
