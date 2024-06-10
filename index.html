@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library of Congress Search</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/darkly/bootstrap.min.css" />
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library of Congress Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/darkly/bootstrap.min.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <form id="search-form" class="p-3">
-    <div>
-        <input class="form-control mb-3" type="text" id="q" name="q" placeholder="search" />
-        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-    </div>
-    </form>
-    <main>
-        <div class="row" id="results">
-            <div class="col-12">
-                <div  class="card p-3 m-3">
-                    <h2>Tile</h2>
-                    <p>Date: Something</p>
-                    <p>Subject: Something</p>
-                    <a class="btn btn-primary" href="#">Read More</a>
-                </div>
-            </div>
-                <div class="row" id="results">
-            <div class="col-12">
-                <div  class="card p-3 m-3">
-                    <h2>Tile</h2>
-                    <p>Date: Something</p>
-                    <p>Subject: Something</p>
-                    <a class="btn btn-primary" href="#">Read More</a>
-                </div>
-            </div>
-            <div class="col-12">
-                <div  class="card p-3 m-3">
-                    <h2>Tile</h2>
-                    <p>Date: Something</p>
-                    <p>Subject: Something</p>
-                    <a class="btn btn-primary" href="#">Read More</a>
-                </div>
-            </div>
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <form id="search-form" class="p-3">
+        <div>
+          <input class="form-control mb-3" type="text" id="q" name="q" placeholder="search" />
+          <select class="form-control mb-3" name="format" id="format">
+            <option value="" selected>--Select Option--</option>
+            <option value="photos" selected>Photos</option>
+            <option value="audio" selected>Audio</option>
+          </select>
+          <button class="btn btn-primary mb-3" type="submit">Submit</button>
         </div>
-    </main>
+      </form>
+    </div>
+    <div class="col-12 col-md-8">
+      <main>
+        <div class="row" id="results">
+
+        </div>
+      </main>
+    </div>
+</div>
 </body>
 </html>
